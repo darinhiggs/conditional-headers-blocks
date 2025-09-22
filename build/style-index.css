@@ -1,0 +1,11 @@
+/**
+ * Frontend Styles for Conditional Headers Blocks
+ * 
+ * Since this plugin adds content to the <head> section,
+ * there are minimal frontend styles needed.
+ */
+
+/* Hidden class for blocks that shouldn't render */
+.chb-hidden {
+    display: none !important;
+}

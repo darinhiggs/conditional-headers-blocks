@@ -1,0 +1,211 @@
+/**
+ * Block Editor Styles for Conditional Headers Blocks
+ */
+
+/* Main block preview styles */
+.chb-editor-preview {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.chb-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chb-preview-header h4 {
+    margin: 0;
+    color: #1e1e1e;
+    font-size: 16px;
+}
+
+.chb-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.chb-status.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.chb-status.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.chb-preview-info {
+    margin-bottom: 15px;
+}
+
+.chb-info-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.chb-info-item strong {
+    color: #1e1e1e;
+}
+
+.chb-info-item code {
+    background: #fff;
+    padding: 2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Monaco, 'Courier New', monospace;
+    font-size: 12px;
+    max-width: 100%;
+    word-break: break-all;
+    display: inline-block;
+}
+
+.chb-info-item em {
+    color: #666;
+    font-style: italic;
+}
+
+.chb-preview-note {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.chb-preview-note p {
+    margin: 0;
+    font-size: 13px;
+    color: #856404;
+}
+
+/* Condition rules in sidebar */
+.chb-conditions-list {
+    margin: 15px 0;
+}
+
+.chb-condition-rule {
+    margin-bottom: 15px;
+}
+
+.chb-condition-rule .components-card__body {
+    padding: 15px;
+}
+
+.chb-condition-controls > div {
+    margin-bottom: 12px;
+}
+
+.chb-condition-controls > div:last-child {
+    margin-bottom: 0;
+}
+
+/* Custom select styling */
+.chb-condition-controls .components-base-control {
+    margin-bottom: 15px;
+}
+
+.chb-condition-controls .components-base-control:last-child {
+    margin-bottom: 0;
+}
+
+/* Button styling */
+.chb-condition-controls .components-button.is-destructive {
+    margin-top: 10px;
+}
+
+/* Logic radio controls */
+.components-radio-control .components-radio-control__option {
+    margin-bottom: 8px;
+}
+
+/* Panel body spacing */
+.components-panel__body-content > p:first-child {
+    margin-top: 0;
+}
+
+/* Card spacing */
+.chb-condition-rule .components-card {
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border: 1px solid #e2e4e7;
+}
+
+/* Textarea for header content */
+.components-textarea-control__input {
+    font-family: Monaco, 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Range control styling */
+.components-range-control__wrapper {
+    margin-bottom: 15px;
+}
+
+/* Toggle control styling */
+.components-toggle-control {
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+    .chb-preview-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .chb-status {
+        align-self: flex-end;
+    }
+    
+    .chb-info-item code {
+        font-size: 11px;
+        word-break: break-all;
+    }
+}
+
+/* Block icon in inserter */
+.block-editor-block-types-list__item-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Block category styling */
+.block-editor-inserter__panel-header {
+    /* Ensure our custom category appears properly */
+}
+
+/* Preview content code styling */
+.chb-info-item code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+/* Add condition button */
+.components-panel__body .components-button.is-primary {
+    margin-top: 10px;
+}
+
+/* Condition rule card hover effect */
+.chb-condition-rule .components-card:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Help text styling */
+.components-base-control__help {
+    font-size: 12px;
+    font-style: italic;
+    color: #757575;
+}
