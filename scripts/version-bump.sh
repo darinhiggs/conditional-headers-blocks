@@ -187,6 +187,8 @@ main() {
     echo "  2. Push changes: git push origin main"
     echo "  3. Push tags: git push origin --tags"
     echo "  4. Create release package: ./scripts/package.sh"
+    echo "  5. Create GitHub release: gh release create v${new_version} --title \"v${new_version}\" --notes \"Release notes here\""
+    echo "  6. Upload package: gh release upload v${new_version} releases/conditional-headers-blocks-v${new_version}.zip"
 }
 
 # Run main function
