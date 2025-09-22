@@ -1,0 +1,21 @@
+WordPress Compatibility Report
+Plugin: Conditional Headers (Blocks)
+Date: Mon 22 Sep 2025 09:45:23 BST
+=================================
+
+WordPress Version Check:
+Latest WP: 6.8.2
+Plugin supports: 5.0 - 6.8+
+
+PHP Version:
+Current: 
+Required: 7.4+
+
+File Integrity: OK
+Syntax Check: FAILED
+
+Recommendations:
+- Test with WordPress 6.8.2 if not already done
+- Review COMPATIBILITY.md for testing procedures
+- Check for deprecation warnings in debug.log
+- Update 'Tested up to' header if tests pass

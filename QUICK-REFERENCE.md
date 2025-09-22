@@ -23,6 +23,18 @@
 ls -la releases/
 ```
 
+### Compatibility Monitoring
+```bash
+# Check WordPress compatibility
+./scripts/compatibility-check.sh
+
+# Monitor for deprecations
+./scripts/deprecation-monitor.sh
+
+# Check latest WordPress version
+curl -s "https://api.wordpress.org/core/version-check/1.7/" | grep -o '"current":"[^"]*"' | head -1
+```
+
 ### Git Operations
 ```bash
 # Check status
